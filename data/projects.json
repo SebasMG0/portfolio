@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "name": "Project 1",
+            "link": "https://example.com/project1",
+            "description": "Description of project 1...",
+            "tags": ["JavaScript", "HTML"]
+        },
+        {
+            "name": "Project 2",
+            "link": "https://example.com/project2",
+            "description": "Description of project 2...",
+            "tags": ["CSS", "Design"]
+        }
+    ]
+}

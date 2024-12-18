@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Sebastian's Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div id="title-container">
+            <h1>Sebastian's Portfolio</h1>
+            <div id="buttons">
+                <button onclick="scrollToSection('about-me-container')">About me</button>
+                <button onclick="scrollToSection('technologies-container')">Technologies</button>
+                <button onclick="scrollToSection('project-container')">Projects</button>
+                <button onclick="scrollToSection('cv-container')">CV</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="center">
+        <div id="about-me-container">
+            <h1>About me</h1>
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-image">
+            <p>I am a Computing Engineer from Universidad de los Andes (Colombia), a curious person by antonomasia and a technology lover.</p>
+            <p>In my free time I like running, walking, kickboxing training, reading and I am learning to play the guitar.</p> 
+            <p>I like philosophy as it makes me feel more human, so I enjoy good and deep conversations.</p>
+        </div>
+        <div id="technologies-container">
+            <h1>Technologies</h1>
+            <p>Python, Java, JavaScript, HTML, CSS, GCP, Angular, React, Selenium, Cypress, Django, Gams, Node.js, Flask, MySQL, PostgreSQL, PL/SQL, SQLite, MongoDB</p>
+        </div>
+
+        <div id="project-container">
+            <h1>Projects</h1>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Tags</th>
+                </tr>
+                <tr>
+                    <td>Web Scraper</td>
+                    <td>A tool to scrape data from websites and store it in a database.</td>
+                    <td>Python, BeautifulSoup, SQL</td>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>A personal portfolio website to showcase my projects and skills.</td>
+                    <td>HTML, CSS, JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Chatbot</td>
+                    <td>An AI-powered chatbot for customer support.</td>
+                    <td>Python, TensorFlow, NLP</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="cv-container">
+            <h1>CV</h1>
+            <a href="ruta/a/tu/CV.pdf" target="_blank">Download my CV</a>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a href="https://github.com/tu-usuario" target="_blank">
+            <img src="images/github-logo.png" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/tu-usuario" target="_blank">
+            <img src="images/linkedin-logo.png" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="mailto:tu-email@gmail.com">
+            <img src="images/gmail-logo.png" alt="Gmail" class="social-icon">
+        </a>
+    </div>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
