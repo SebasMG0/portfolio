@@ -1,5 +1,6 @@
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     background: #E0E2DB;
@@ -8,10 +9,21 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #157145;
+}
+
+/* Header */
 #header {
     background-color: #157145;
     color: #E0E2DB;
     padding: 1rem;
+
+    h1{
+        color: white;
+    }
 }
 
 #title-container {
@@ -39,6 +51,7 @@ body {
     background-color: #A3B18A;
 }
 
+/* Main Content */
 #center {
     padding: 2rem;
     background-color: #E0E2DB;
@@ -47,15 +60,38 @@ body {
     text-align: left;
 }
 
-#about-me-container, #technologies-container, #project-container, #cv-container {
+#about-me-container,
+#technologies-container,
+#project-container,
+#experience-container {
     margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image {
-    width: 70%;
+    width: 50%;
     height: auto;
     display: block;
     margin: 0 auto 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#technologies-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#technologies-container li {
+    background-color: #A3B18A;
+    color: #191716;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 #project-container table {
@@ -64,23 +100,81 @@ body {
     margin: 0 auto;
 }
 
-#project-container th, #project-container td {
-    border: 1px solid #157145;
-    padding: 0.5rem;
-    text-align: center;
+#project-container th,
+#project-container td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 2px solid #157145;
 }
 
+#project-container th {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #157145;
+    color: #fff;
+}
+
+#project-container td {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Project Links */
+.project-link {
+    color: #157145;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Tags */
+.tag {
+    display: inline-block;
+    background-color: #A3B18A;
+    color: #191716;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    margin: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.tag:hover {
+    background-color: #157145;
+    color: #fff;
+}
+
+/* Footer */
 #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     background-color: #157145;
     color: #E0E2DB;
-    text-align: center;
     padding: 1rem;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    color: #E0E2DB;
+    text-decoration: none;
+}
+
+.footer-link img {
+    margin-right: 0.5rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
 
 .social-icon {
     width: 30px;
     height: 30px;
-    margin: 0 10px;
     transition: transform 0.3s;
 }
 

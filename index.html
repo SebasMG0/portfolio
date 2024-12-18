@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="script.js" defer></script>
     <title>Sebastian's Portfolio</title>
 </head>
+
 <body>
     <div id="header">
         <div id="title-container">
@@ -15,67 +17,131 @@
                 <button onclick="scrollToSection('about-me-container')">About me</button>
                 <button onclick="scrollToSection('technologies-container')">Technologies</button>
                 <button onclick="scrollToSection('project-container')">Projects</button>
-                <button onclick="scrollToSection('cv-container')">CV</button>
+                <button onclick="window.location.href='CV_ES_Sebastian.pdf'">CV</button>
             </div>
         </div>
     </div>
-
+    
     <div id="center">
         <div id="about-me-container">
             <h1>About me</h1>
             <img src="images/profile.jpg" alt="Profile Picture" class="profile-image">
-            <p>I am a Computing Engineer from Universidad de los Andes (Colombia), a curious person by antonomasia and a technology lover.</p>
-            <p>In my free time I like running, walking, kickboxing training, reading and I am learning to play the guitar.</p> 
-            <p>I like philosophy as it makes me feel more human, so I enjoy good and deep conversations.</p>
+            <p>I am a Computer Engineer from the Universidad de los Andes (Colombia), a curious person by antonomasia and a technology lover. I have had the opportunity to work with multidisciplinary teams and take out projects in various business sectors.</p>
+            <p>In my free time I like running, walking, kickboxing training, reading and I am learning to play guitar. I am a quiet person who enjoys simple things and is intrigued by complex ones.</p>
+            <p>I like philosophy as it makes me feel more human, so I enjoy good and deep conversations. I am an engineer who considers equally important human sciences and the development of the individual as a person.</p>
         </div>
+    
         <div id="technologies-container">
             <h1>Technologies</h1>
-            <p>Python, Java, JavaScript, HTML, CSS, GCP, Angular, React, Selenium, Cypress, Django, Gams, Node.js, Flask, MySQL, PostgreSQL, PL/SQL, SQLite, MongoDB</p>
+            <p>Throughout my career and in my personal life I have had the opportunity to apply knowledge and technologies such as:</p>
+            <ul>
+                <li>Python, Java, Javascript, Html, Google Cloud Platform</li>
+                <li>Selenium, Cypress, Django, React, Angular, Flask, Gams, CupCarbon</li>
+                <li>MySQL, PostgreSQL, PL/SQL, SQLite, MongoDB</li>
+            </ul>
         </div>
 
+        <div id="experience-container">
+            <h1>Experience</h1>
+            <div class="experience-item">
+                <h2>Frontend Developer - IntegraIT <span class="">Jan 2023 - Aug 2023</span></h2>
+                <h3>Bogotá, Colombia</h3>
+                <ul>
+                    <li>Angular Developer</li>
+                    <li>Tester</li>
+                    <li>Web Scraper</li>
+                </ul>
+            </div>
+        </div>        
+    
         <div id="project-container">
             <h1>Projects</h1>
+            <p>Some of the projects in which I have actively participated developing tools for multiple purposes are:</p>
             <table>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                    <th>Tags</th>
-                </tr>
-                <tr>
-                    <td>Web Scraper</td>
-                    <td>A tool to scrape data from websites and store it in a database.</td>
-                    <td>Python, BeautifulSoup, SQL</td>
-                </tr>
-                <tr>
-                    <td>Portfolio Website</td>
-                    <td>A personal portfolio website to showcase my projects and skills.</td>
-                    <td>HTML, CSS, JavaScript</td>
-                </tr>
-                <tr>
-                    <td>Chatbot</td>
-                    <td>An AI-powered chatbot for customer support.</td>
-                    <td>Python, TensorFlow, NLP</td>
-                </tr>
-            </table>
-        </div>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Tags</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://gitlab.com/cloudeq4/fpv-enthusiast-tour" target="_blank" class="project-link">FPVEnthusiastTour</a></td>
+                        <td>Video processing project created with drones aimed at applying Cloud knowledge in Google Cloud Platform. This project used tools such as CloudSQL, CloudStorage (Buckets), Virtual Machines, CI/CD, NFS Servers, Containers, Cloud Functions, Artifacts, Docker, Docker-Compose, and PubSub for the development of each requirement of each delivery.</td>
+                        <td><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">API</span><span class="tag">GoogleCloudPlatform</span><span class="tag">Docker</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/G25-Constr-Aplic-Moviles/flutter-app" target="_blank" class="project-link">GastroAndes</a></td>
+                        <td>Mobile programming project using Flutter related to accessing nearby restaurants for app users.</td>
+                        <td><span class="tag">Flutter</span><span class="tag">API</span><span class="tag">Mobile Development</span></td>
+                    </tr>
+                    <tr>
+                        <td>GrimaudTool</td>
+                        <td>Crawler and Scraper for the deep web aimed at extracting information related to the Colombian Aerospace Force. Presented as a thesis for the Systems and Computing Engineering degree at Universidad de los Andes in 2024-II.</td>
+                        <td><span class="tag">WebScraping</span><span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">TOR</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/SebasMG0/TestingYard" target="_blank" class="project-link">TestingYard</a></td>
+                        <td>Project aimed at implementing known algorithms and doing programming exercises mainly in Python and Java.</td>
+                        <td><span class="tag">Python</span><span class="tag">Java</span><span class="tag">Algorithms</span></td>
+                    </tr>
+                    
+                    <tr> 
+                        <td>ClinicalTrialsWebScraper</td>
+                        <td>Project built in Python for extracting and transforming information related to clinical studies on sites like SIIPRIS or EUDRA. (For privacy reasons, the project link is not published)</td> 
+                        <td><span class="tag">Python</span><span class="tag">WebScraping</span><span class="tag">Selenium</span><span class="tag">MySQL</span><span class="tag">ETL</span></td> 
+                    </tr>
 
-        <div id="cv-container">
-            <h1>CV</h1>
-            <a href="ruta/a/tu/CV.pdf" target="_blank">Download my CV</a>
+                    <tr>
+                        <td>SM_YT_Scraper</td>
+                        <td>Web Scraping project aimed at extracting information from the channels a user is subscribed to on YouTube. (For privacy reasons, the project link is not published)</td>
+                        <td><span class="tag">Python</span><span class="tag">WebScraping</span><span class="tag">Selenium</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://github.com/SebasMG0/pp_proyecto_fp" target="_blank" class="project-link">pp_proyecto_fp</a></td>
+                        <td>First version of an interpreter for a simple functional language built using the multiparadigm language Mozart OZ.</td>
+                        <td><span class="tag">Functional</span><span class="tag">Mozart OZ</span><span class="tag">Logic</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://github.com/SebasMG0/MOS" target="_blank" class="project-link">MOS</a></td>
+                        <td>Repository where optimization problems are solved using Gams and Pyomo.</td>
+                        <td><span class="tag">Optimization</span><span class="tag">GAMS</span><span class="tag">Pyomo</span><span class="tag">Mathematical Models</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://github.com/SebasMG0/LyM-TP0" target="_blank" class="project-link">LyM-TP0</a></td>
+                        <td>Syntax analyzer built in Python for an invented multiparadigm language.</td>
+                        <td><span class="tag">Python</span><span class="tag">Parser</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://github.com/SebasMG0/LyM-P3" target="_blank" class="project-link">LyM-P3</a></td>
+                        <td>Lexer built using JavaCC.</td>
+                        <td><span class="tag">Lexer</span><span class="tag">Java</span></td>
+                    </tr>             
+                </tbody>
+            </table>
         </div>
     </div>
 
     <div id="footer">
-        <a href="https://github.com/tu-usuario" target="_blank">
-            <img src="images/github-logo.png" alt="GitHub" class="social-icon">
+        <a href="https://github.com/SebasMG0" target="_blank" class="footer-link">
+            <img src="images/github-mark-white.png" alt="GitHub" class="social-icon">
+            <span>SebasMG0</span>
         </a>
-        <a href="https://www.linkedin.com/in/tu-usuario" target="_blank">
-            <img src="images/linkedin-logo.png" alt="LinkedIn" class="social-icon">
+        <a href="https://www.linkedin.com/in/murciasebastian" target="_blank" class="footer-link">
+            <img src="images/LI-In-Bug.png" alt="LinkedIn" class="social-icon">
+            <span>murciasebastian</span>
         </a>
-        <a href="mailto:tu-email@gmail.com">
+        <a href="mailto:s.murciag03@gmail.com" class="footer-link">
             <img src="images/gmail-logo.png" alt="Gmail" class="social-icon">
+            <span>s.murciag03@gmail.com</span>
         </a>
     </div>
+    
 
     <script>
         function scrollToSection(id) {
@@ -83,4 +149,5 @@
         }
     </script>
 </body>
+
 </html>
